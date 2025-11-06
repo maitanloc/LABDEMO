@@ -1,0 +1,64 @@
+﻿<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Sign Up • FPoly</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+    <!-- Link to stylesheet -->
+    <link rel="stylesheet" href="Style.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title">
+            <span>FPoly • Sign Up</span>
+        </div>
+
+        <form id="signupForm" class="form" novalidate>
+            <div class="row">
+                <i class="fas fa-envelope"></i>
+                <input id="email" type="email" placeholder="Email hoặc SĐT" required aria-label="Email or phone">
+            </div>
+
+            <div class="row">
+                <i class="fas fa-user"></i>
+                <input id="fullname" type="text" placeholder="Họ và tên" required aria-label="Full name">
+            </div>
+
+            <div class="row">
+                <i class="fas fa-lock"></i>
+                <input id="password" type="password" placeholder="Mật khẩu (ít nhất 8 ký tự)" minlength="8" required aria-label="Password">
+                <button type="button" class="eye" id="togglePwd" aria-label="Hiện/Ẩn mật khẩu"><i class="fa-solid fa-eye"></i></button>
+            </div>
+
+            <div class="row">
+                <i class="fas fa-lock"></i>
+                <input id="password2" type="password" placeholder="Nhập lại mật khẩu" minlength="8" required aria-label="Confirm password">
+            </div>
+
+            <div class="pass">
+                <label class="checkbox">
+                    <input id="remember" type="checkbox">
+                    <span>Ghi nhớ đăng nhập</span>
+                </label>
+                <a class="link" href="#">Quên mật khẩu?</a>
+            </div>
+
+            <div class="row button">
+                <input id="btnSubmit" type="submit" value="Đăng ký">
+            </div>
+
+            <div class="signup-link">Đã có tài khoản? <a href="#">Đăng nhập</a></div>
+
+            <div id="message" class="message" aria-live="polite"></div>
+        </form>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
