@@ -1,2 +1,2 @@
 # LABDEMO
-LAB CỦA LẬP TRÌNH WEB CƠ BẢN
+Đây là các bài lab web của Mai Tấn Lộc SD21302 NET7
